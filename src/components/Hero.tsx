@@ -4,11 +4,8 @@ import Section from "@/components/Section"
 import { useRef } from 'react'
 import { ScrollParallax } from 'react-just-parallax'
 import { code, curve, heroBackground } from '../assets'
-
 import CompanyLogos from './CompanyLogos'
 import Generating from './Generating'
-
-
 import { BackgroundCircles, BottomLine, Gradient } from './design/Hero'
 
 const Hero = () => {
