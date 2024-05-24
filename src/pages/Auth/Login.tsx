@@ -10,11 +10,11 @@ function Login() {
     <Section className="overflow-hidden flex justify-center items-center h-[90%]" id="login" crosses crossesOffset='lg:translate-y-[5.25rem] '
     >
       <div className='container relative' ref={parallaxRef}>
-        <div className='relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]'>
+        <div className='relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem] flex  items-center justify-center'>
 
-          <div className="grid gap-2 w-10/12 min-h-[80%] grid-cols-1 lg:grid-cols-2 border border-n-4 bg-n-8
+          <div className="grid gap-2 w-10/12 min-h-[80%] grid-cols-1 lg:grid-cols-2 lg:border lg:border-n-4   bg-n-8 
      rounded-2xl">
-            <div className="relative rounded-l-2xl flex  items-center justify-center bg-gray-100 px-4 py-12 dark:bg-n-8 sm:px-6 lg:px-8">
+            <div className="relative rounded-l-2xl  bg-gray-100 px-4 py-12 dark:bg-n-8 sm:px-6 lg:px-8">
               <div className="mx-auto w-full max-w-md space-y-6">
                 <div className="text-center">
                   <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50">
