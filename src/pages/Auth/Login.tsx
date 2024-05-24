@@ -1,4 +1,4 @@
-import { code } from "@/assets"
+import { code, heroBackground } from "@/assets"
 import { BackgroundCircles } from "@/components/design/Hero"
 
 import Section from "@/components/Section"
@@ -90,15 +90,14 @@ function Login() {
           </div>
 
         </div>
-        <div className='absolute -top-[16%] left-1/2 w-[34%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]'>
+        <div className='absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[74%]
+        hidden lg:block
+        '>
 
-          {/* Background image
-            purple filter
-           */}
+
           <img
-            src={code}
-            className='p-52 w-[80%] filter blur-[30px] brightness-25 contrast-125 grayscale-25 saturate-125 scale-[1.2] translate-y-[9%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[3%] 
-            '
+            src={heroBackground}
+            className='w-full blur-[30px]'
             width={1440}
             height={1800}
             alt='hero'
