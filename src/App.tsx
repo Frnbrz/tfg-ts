@@ -8,7 +8,6 @@ import { RoutesWithNotFound } from './utilities'
 import ErrorBoundary from './utilities/ErrorBoundaries.utility'
 import { SnackbarUtilitiesConfigurator } from './utilities/snackbarManager'
 
-
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'))
 const CodePage = lazy(() => import('./pages/CodePage/CodePage'))
 const Login = lazy(() => import('./pages/Auth/Login'))
@@ -19,22 +18,23 @@ function App() {
     <>
       <SnackbarProvider>
         <SnackbarUtilitiesConfigurator />
-        <Suspense fallback={
-          <div className="flex items-center justify-center h-screen">
-            <h1 className="text-3xl">Loading...</h1>
-          </div>
-        }>
+        <Suspense
+          fallback={
+            <div className='flex items-center justify-center h-screen'>
+              {/* Loading animation here */}
+              <div className='animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-purple-500'></div>
+            </div>
+          }
+        >
           <BrowserRouter>
             <Header />
-            <div className="h-dvh" >
+            <div className='h-dvh'>
               <ErrorBoundary fallbackComponent={<h2>Hubo un error</h2>}>
                 <RoutesWithNotFound>
-
-                  <Route path="/" element={<HomePage />} />
-                  <Route path="/code" element={<CodePage />} />
-                  <Route path="/login" element={<Login />} />
-                  <Route path="/signup" element={<SignUp />} />
-
+                  <Route path='/' element={<HomePage />} />
+                  <Route path='/code' element={<CodePage />} />
+                  <Route path='/login' element={<Login />} />
+                  <Route path='/signup' element={<SignUp />} />
                 </RoutesWithNotFound>
               </ErrorBoundary>
               <Footer />

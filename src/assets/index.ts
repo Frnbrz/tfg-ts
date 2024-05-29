@@ -27,7 +27,7 @@ import yourlogo5 from './yourlogo5.svg'
 
 import code from './hero/code.jpg'
 import curve from './hero/curve.png'
-import heroBackground from './hero/hero-background.jpg'
+import heroBackground from './hero/hero-background.png'
 import robot from './hero/robot.jpg'
 
 import curve1 from './collaboration/curve-1.svg'

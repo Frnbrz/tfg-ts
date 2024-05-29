@@ -1,6 +1,6 @@
-import Button from "@/components/Button"
-import Notification from "@/components/Notification"
-import Section from "@/components/Section"
+import Button from '@/components/Button'
+import Notification from '@/components/Notification'
+import Section from '@/components/Section'
 import { useRef } from 'react'
 import { ScrollParallax } from 'react-just-parallax'
 import { code, curve, heroBackground } from '../assets'
@@ -10,7 +10,6 @@ import { BackgroundCircles, BottomLine, Gradient } from './design/Hero'
 
 const Hero = () => {
   const parallaxRef = useRef(null)
-
 
   return (
     <Section
@@ -74,16 +73,15 @@ const Hero = () => {
           <div className='absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]'>
             <img
               src={heroBackground}
-              className='w-full'
+              className='w-full  pointer-events-none blur-xl lg:blur-[30px]
+              '
               width={1440}
               height={1800}
               alt='hero'
             />
           </div>
 
-          <BackgroundCircles
-            parallaxRef={parallaxRef}
-          />
+          <BackgroundCircles parallaxRef={parallaxRef} />
         </div>
 
         <CompanyLogos className='hidden relative z-10 mt-20 lg:block' />
@@ -93,5 +91,4 @@ const Hero = () => {
     </Section>
   )
 }
-
 export default Hero
